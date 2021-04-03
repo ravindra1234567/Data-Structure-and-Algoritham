@@ -42,6 +42,15 @@ class Node{
         }
     }
 
+    public int top(){
+        if(front == null){
+            System.out.println("Stack is Empty! ");
+            return Integer.MIN_VALUE;
+        }else{
+            return front.data;
+        }
+    }
+
     void display(){
         if(front == null){
             System.out.println("Stack is Empty");
@@ -60,10 +69,10 @@ class Node{
     StackOperationUsingLinkedList obj = new StackOperationUsingLinkedList();
     obj.push(10);
     obj.push(20);
-    obj.display();
-    // System.out.println(obj.pop());
-    // System.out.println(obj.pop());
-    // System.out.println(obj.pop());
+    System.out.println(obj.pop());
+    // obj.display();
+    System.out.println(obj.top());
+    
 
     }
     
