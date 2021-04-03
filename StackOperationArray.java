@@ -1,5 +1,5 @@
 import java.util.*;
-public class StackOperation{
+public class StackOperationArray{
 
     static int top =0;
     static int max = 5;
